@@ -1,5 +1,6 @@
 from utils.base.base import BaseClass as base
 
+
 class ShoppingCart(base):
     atc_xpath = "//button[@name='add']"
     view_cart_xpath = "//a[@id='cart-notification-button']"
@@ -25,4 +26,3 @@ class ShoppingCart(base):
 
     def click_on_continue_shopping_cta(self):
         base.wait_for_element_with_xpath_and_click(self, self.continue_shopping_xpath)
-
